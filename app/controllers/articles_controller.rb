@@ -13,11 +13,13 @@ def new
 end
 
 def create
+  logger.debug params.inspect
   @article = Article.new(article_params)
 
   if @article.save 
       redirect_to @article #if saved browser redirected to articles page
   else
+      logger.debug @article.errors.inspect 
       render :new, status: :unprocessable_entity #if article not saved form redisplayed and status code 422 displayed
   end
 end
