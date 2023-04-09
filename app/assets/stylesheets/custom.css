@@ -23,6 +23,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 1;
+    min-height: 70px;
 }
 
 .navbar-brand {
@@ -36,21 +37,10 @@ body {
 .image-container {
     position: relative;
     width: 100%;
+    height: auto;
     background-color: #fff; /* Add a non-transparent background color */
     }
 
-
-.image-container::before {
-    content: "";
-    background-image: url("flower_image.jpeg");
-    opacity: 0.5;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-}
 .image {
     width: 100%;
     height: auto;
@@ -63,24 +53,22 @@ body {
     left: 15vw;
     transform: translate(-50%, -50%);
     color: rgb(255, 255, 255) !important;
-    text-align: center;
+    z-index: 2;
 }
 
 .title-text {
     color: white;
-    font-size: 3em;
+    font-size: 4em;
+    padding-bottom: 10vh;
 }
 
-.main-text {
+.main-text > p {
     text-align: left;
-    width: 15vw;
+    width: 20vw;
     font-size: 1em;
+    line-height: 3vh;
 }
 
-@media (max-width: 768px) {
-    .main-text {
-        font-size: 0.8em;
-        width: 80%;
-        margin: 0 auto;
-    }
+.create_new{
+    margin-top: 5vh;
 }
