@@ -76,3 +76,18 @@ body, html {
     color: white;
     margin-top: 15vh;
 }
+
+/* article index */
+.card {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.article-index {
+background-color: rgb(27, 27, 27);
+}
+
+.article-index h1 {
+    color: white;
+    padding-top: 10vh;
+}
